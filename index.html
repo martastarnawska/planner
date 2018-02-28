@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>My Planner</h1>
+  <form id="form">
+    <!-- <h2>New task</h2> -->
+    <input id="input1" class="input" type="text" size="30"> <br>
+
+    <select id="select" class="select" name="selector">
+      <option value="mo">Monday</option>
+      <option value="tu">Tuesday</option>
+      <option value="we">Wednesday</option>
+      <option value="th">Thursday</option>
+      <option value="fr">Friday</option>
+      <option value="sa">Saturday</option>
+      <option value="su">Sunday</option>
+    </select>
+
+    <button id="button1" class="button" type="submit" value="Submit"> Add</button>
+  </form>
+
+
+  <div class="container">
+    <!-- Monday -->
+    <div id="monday" class="day monday">
+      <h2>Monday</h2>
+      <ul id="mondayList" class="list"> </ul>
+      <ul id="mondayDone" class="list"> </ul>
+
+    </div>
+  <!-- Tuesday -->
+    <div id="tuesday" class="day">
+      <h2>Tuesday</h2>
+      <ul id="tuesdayList" class="list"></ul>
+    </div>
+  <!-- Wednesday -->
+    <div id="wednesday" class="day">
+      <h2>Wednesday</h2>
+      <ul id="wednesdayList" class="list"></ul>
+    </div>
+  <!-- Thursday -->
+    <div id="thursday" class="day">
+      <h2>Thursday</h2>
+      <ul id="thursdayList" class="list"></ul>
+    </div>
+  <!-- Friday -->
+    <div id="friday" class="day">
+      <h2>Friday</h2>
+      <ul id="fridayList" class="list"></ul>
+    </div>
+  <!-- Saturday -->
+    <div id="saturday" class="day">
+      <h2>Saturday</h2>
+      <ul id="saturdayList" class="list"></ul>
+    </div>
+  <!-- Sunday -->
+    <div id="sunday" class="day sunday">
+      <h2>Sunday</h2>
+      <ul id="sundayList" class="list"></ul>
+    </div>
+  </div>
+
+  <!-- jQuery i plik JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/designs.js"></script>
+</body>
+</html>

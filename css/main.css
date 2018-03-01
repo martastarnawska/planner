@@ -8,13 +8,9 @@ body {
   flex-wrap: wrap;
 }
 
-/* form {
-  background-color: inherit;
-  border-radius: 10px;
-  border: solid 2px gray;
-  padding: 5px 20px 0 5px;
-} */
+
 .input {
+  display: block;
   border-radius: 7px;
   padding: 5px;
   line-height: 10px;

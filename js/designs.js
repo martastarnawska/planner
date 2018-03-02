@@ -13,14 +13,7 @@ var sundayList =$("#sundayList");
 
 
 form.submit(function (event) {
-// submit.on('click', function(event) {
 
-
-  // list.prepend("<li>");
-  // event.preventDefault();
-  // $("li:first").text(input.val());
-  // $("li:first").addClass("item");
-  // input.val('');
 
 if (day.val() === "mo") {
   mondayList.prepend("<li>");
@@ -59,7 +52,7 @@ if (day.val() === "mo") {
     $("#saturdayList li:first").text(input.val());
     $("#saturdayList li:first").addClass("item");
     input.val('');
-} else {
+} else if (day.val() === "su") {
     sundayList.prepend("<li>");
     event.preventDefault();
     $("#sundayList li:first").text(input.val());
@@ -67,18 +60,18 @@ if (day.val() === "mo") {
     input.val('');
 }
 
-
-  $("li").dblclick(function() {
-  // $("li").on('click', function(event) {
-    $(this).addClass("done");
-    // $(this).remove()
-    $(this).parent().append(this);
-
+  $("li").click(function() {
+    if ($(this).hasClass("done") === false) {
+      $(this).addClass("done");
+      $(this).parent().append(this);
+    }
   });
 
-$("li").contextmenu(function() {
-  $(this).removeClass("done");
-  $(this).parent().prepend(this);
+$("li").dblclick(function() {
+  if ($(this).hasClass("done")) {
+    $(this).removeClass("done");
+    $(this).parent().prepend(this);
+  }
 });
 
 });
